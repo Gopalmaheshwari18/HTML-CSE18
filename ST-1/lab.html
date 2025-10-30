@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Student Registration</title>
+</head>
+<body>
+
+  <h1 align="center">College Student Registration Form</h1>
+  <hr>
+
+  <form action="/submit_registration" method="post">
+
+    <label>Full Name:</label><br>
+    <input type="text" placeholder="fullname" required><br><br> 
+
+    <label for="fathers'-name">Father's Name:</label><br>
+     <input type="text" id="fathers'-name" placeholder="fathers'-name" required><br><br>
+
+    <label for="mothers'-name">Mother's Name:</label><br>
+    <input type="text" id="mothers'-name" placeholder="mothers'-name" required><br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" placeholder="dob" required><br><br>
+
+    <label>Email Address:</label><br>
+    <input type="email" placeholder="email" required><br><br>
+
+    <label>Phone Number:</label><br>
+    <input type="tel" placeholder="phone"  required><br><br>
+
+    <label>Gender:</label><br>
+    <select name="gender" required>
+      <option value="">--Select--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label>Course Applied For:</label><br>
+    <input type="text" name="course" required><br><br>
+
+    <label>Year of Admission:</label><br>
+    <input type="number" name="year" min="2020" max="2030" required><br><br>
+
+    <label>Address:</label><br>
+    <textarea name="address" rows="4" cols="40" required></textarea><br><br>
+
+    <label>Upload Photo:</label><br>
+    <input type="file" name="photo" accept="image/*"><br><br>
+
+    <label>
+      <input type="checkbox" name="agree" required>
+      I confirm that the above information is accurate.
+    </label><br><br>
+
+    <input type="submit" value="Register">
+
+  </form>
+
+</body>
+</html>
