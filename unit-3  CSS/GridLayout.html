@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        html, * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+            width: 100%;
+            height: auto;
+            background-color: aqua;
+            display: grid;
+             /* grid-template-columns: repeat(4,1fr) */
+             grid-template-rows: 100px 80px auto 120px;
+            gap: 10px;
+        }
+        .box{
+            background-color: rgb(179, 133, 239);
+            /* height: 200px; */
+        }
+        @media screen and {max-width:400px} and (max-width: 770px){
+            h2{
+                font-size: 32px;
+            }
+        }
+        main{
+            background-color: beige;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 10px; }
+            @media screen and  {min-width:
+                
+            }
+        
+
+    </style>
+</head>
+<body>
+    <h2>hello Gopal</h2>
+    <main>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+
+    </main>
+    
+    </body>
+</html>
